@@ -7,7 +7,7 @@ pipeline {
         base_imagename = "base-image"
         api_imagename = "my-api"
         auth_imagename = "my-auth"
-        bucket = "MyBucketName"
+        bucket = "MyBucket-Name"
         region = "MyAwsRegion"
         webHook_url = "myWebHookURL"
         api_res_url = "https://${bucket}.s3.${region}.amazonaws.com/${TAG_NAME}/${api_imagename}-${TAG_NAME}.tar.gz"
