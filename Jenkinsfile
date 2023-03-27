@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('gitclone') {                                                          
             steps {
-            git url:"https://github.com/mempage-tech/Mempage-repo.git"
+            git url:"https://github.com/arjunande/jenkinsfile-upload-to-s3.git"
             }
         }
      }                                                                            
