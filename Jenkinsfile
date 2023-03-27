@@ -3,11 +3,10 @@ pipeline {
  
     environment{
         aws_credential = "aws-cred"
-        repo_url = "MyRepositoryUrl"
         imagename = "openjdk:8-jdk-alpine"
         api_imagename = "my-api"
         auth_imagename = "my-auth"
-        bucket = "MyBucke-tName"
+        bucket = "MyBucket-name"
         region = "ap-northeast-1"
         webHook_url = "18.179.20.155:8080"
      api_res_url = "https://${bucket}.s3.${region}.amazonaws.com/${TAG_NAME}/${api_imagename}-${TAG_NAME}.tar.gz"
