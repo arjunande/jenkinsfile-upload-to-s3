@@ -22,16 +22,6 @@ pipeline {
             }
         }
      }                                                                            
-        
-    stages{
-        stage('docker build') {
-            steps {
-                script{
-                    dockerimage=docker.build imageName
-                }
-            }
-        }
-    }
      stage("Zip"){
             steps{
                 sh "mkdir ${TAG_NAME}"
