@@ -3,7 +3,6 @@ pipeline {
  
     environment{
         aws_credential = "aws-cred"
-        repo_url = "MyRepositoryUrl"
         imagename = "openjdk:8-jdk-alpine"
         api_imagename = "my-api"
         auth_imagename = "my-auth"
@@ -19,7 +18,7 @@ pipeline {
     stages {
         stage('gitclone') {                                                          
             steps {
-            git url:"https://github.com/mempage-tech/Mempage-repo.git"
+            git url:"https://github.com/arjunande/jenkinsfile-upload-to-s3.git"
             }
         }
      }                                                                            
